@@ -256,7 +256,7 @@ def cli_main():
     cliparser = subparser.add_parser("cli", help="Use Commandline Arguments")
     cliparser.set_defaults(mode="cli")
     cliparser.add_argument("-t", "--target", required=True, help="The Folder to add the files to")
-    cliparser.add_argument("-s", "--source", required=False, help="The Source Folder of the files")
+    cliparser.add_argument("-s", "--source", required=True, help="The Source Folder of the files")
     cliparser.add_argument("-x", "--source-ext", nargs="*", required=False, help="Specifies what File Types to scan for in the Source Folder")
     cliparser.add_argument("-nr", "--no-recurse", action="store_false", required=False, help="Don't recursively search all subfolders of the Source Folder")
 
